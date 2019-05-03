@@ -90,6 +90,7 @@ var GRUMPIES = {
 var hintsCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var hintsLower = "abcdefghijklmnopqrstuvwxyz.:;,";
 var hintsNumbers= "1234567890 @ &amp;!?#$€%";
+var hintsSmallCaps= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 
 function eventTextLineChange(e) {
@@ -217,7 +218,9 @@ function prepareAndShowFontLayout() {
     var hints_caps = $('.hints-caps');
     var hints_numbers = $('.hints-numbers');
     var hints_lower = $('.hints-lower');
+    var hints_smallcaps = $('.hints-smallcaps');
     hints_lower.html(hints_lower.html() + hintsLower);
     hints_caps.html(hints_caps.html() + hintsCaps);
     hints_numbers.html(hints_numbers.html() + hintsNumbers);
+    hints_smallcaps.html(hints_smallcaps.html() + hintsSmallCaps);
 }

@@ -68,6 +68,9 @@ div.tabs > div h2 { margin-top: 0; }
 .uppercase {
 	text-transform: uppercase;
 }
+.smallcaps {
+  font-variant: small-caps;
+}
 
 /*-----------------------------------------------------------------------------------------------------
   Tab Specific Rules:

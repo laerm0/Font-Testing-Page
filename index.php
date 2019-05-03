@@ -128,21 +128,23 @@ $(document).ready(function(){
 				<p class="hints-lower" style="font-size: 48px;"></p>
 				<p class="hints-caps" style="font-size: 48px;"></p>
 				<p class="hints-numbers" style="font-size: 48px;"></p>
+				<p class="hints-smallcaps" style="font-variant: small-caps,font-size: 48px;"></p>
 				<p>&nbsp;</p>
 
-				<p class="sizelabel">28px</p>
+<!-- 				<p class="sizelabel">28px</p>
 				<p class="hints-lower" style="font-size: 28px;"></p>
 				<p style="font-size: 28px;">
 					<span class="hints-caps"></span> 
 					<span class="hints-numbers"></span>
-				</p><p>&nbsp;</p>
+				</p><p>&nbsp;</p> -->
 				
-				<?php for ($i = 24; $i >= 9; $i--) { ?>
+				<?php for ($i = 36; $i >= 10; $i--) { ?>
 				<p class="sizelabel"><?php echo $i; ?>px</p>
 				<p class="hints-lower" style="font-size: <?php echo $i; ?>px;"></p>
-				<p style="font-size: <?php echo $i; ?>px;">
-					<span class="hints-caps"></span> 
-					<span class="hints-numbers"></span>
+<!-- 				<p style="font-size: <?php echo $i; ?>px;"> -->
+					<p class="hints-caps" style="font-size: <?php echo $i; ?>px;"></p> 
+					<p class="hints-numbers" style="font-size: <?php echo $i; ?>px;"></p>
+					<p class="hints-smallcaps" style="font-variant: small-caps, font-size: <?php echo $i; ?>px;"></p>
 				</p>
 				<p>&nbsp;</p>
 				<?php } ?>
