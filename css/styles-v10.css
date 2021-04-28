@@ -68,9 +68,18 @@ div.tabs > div h2 { margin-top: 0; }
 .uppercase {
 	text-transform: uppercase;
 }
-.smallcaps {
-  font-variant: small-caps;
-}
+.smallcaps{
+    font-variant-ligatures: normal;
+    font-variant-caps: small-caps;
+    font-variant-numeric: normal;
+    font-variant-east-asian: normal;
+
+/*.smallcaps {
+  font-variant-caps: all-small-caps;
+  -moz-font-feature-settings: "c2sc", "smcp";
+  -webkit-font-feature-settings: "c2sc", "smcp";
+  font-feature-settings: "c2sc", "smcp";
+}*/
 
 /*-----------------------------------------------------------------------------------------------------
   Tab Specific Rules:

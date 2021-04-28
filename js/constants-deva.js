@@ -71,7 +71,7 @@ var GRUMPIES = {
     },
 
     'caps': {
-        'text': "Arrowroot Barley Chervil Dumpling Endive Flaxseed Garbanzo Hijiki Ishtu Jicama Kale Lychee Marjoram Nectarine Oxtail Pizza Quinoa Roquefort Squash Tofu Uppuma Vanilla Wheat Xergis Yogurt Zweiback 0 1 2 3 4 5 6 7 8 9 ! ?",
+        'text': "Arrowroot Barlety Chervil Dumpling Endine Flaxseed Garbanzo Hijiki Ishtu Jicama Kale Lycheen Marjoram Nectarine Oxtail Pizza Quinoa Roquefort Squash Tofu Uppuma Vanilla Wheat Xergis Yogurt Zweiback 0 1 2 3 4 5 6 7 8 9 ! ?",
         'columns': [
             {sizes: [60, 48, 36, 30, 28, 24, 20, 18, 16, 14, 13], innerblock: 'div'}
         ],
@@ -79,7 +79,7 @@ var GRUMPIES = {
     },
 
     'allcaps': {
-        'text': "ARROWROOT BARLEY CHERVIL DUMPLING ENDIVE FLAXSEED GARBANZO HIJIKI ISHTU JICAMA KALE LYCHEE MARJORAM NECTARINE OXTAIL PIZZA QUINOA ROQUEFORT SQUASH TOFU UPPUMA VANILLA WHEAT XERGIS YOGURT ZWEIBACK 0 1 2 3 4 5 6 7 8 9 ! ?",
+        'text': "ARROWROOT BARLETY CHERVIL DUMPLING ENDINE FLAXSEED GARBANZO HIJIKI ISHTU JICAMA KALE LYCHEEN MARJORAM NECTARINE OXTAIL PIZZA QUINOA ROQUEFORT SQUASH TOFU UPPUMA VANILLA WHEAT XERGIS YOGURT ZWEIBACK 0 1 2 3 4 5 6 7 8 9 ! ?",
         'columns': [
             {sizes: [60, 48, 36, 30, 28, 24, 20, 18, 16, 14, 13], innerblock: 'div'}
         ],
@@ -90,7 +90,6 @@ var GRUMPIES = {
 var hintsCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var hintsLower = "abcdefghijklmnopqrstuvwxyz.:;,";
 var hintsNumbers= "1234567890 @ &amp;!?#$€%";
-var hintsSmallCaps= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 
 function eventTextLineChange(e) {
@@ -218,9 +217,7 @@ function prepareAndShowFontLayout() {
     var hints_caps = $('.hints-caps');
     var hints_numbers = $('.hints-numbers');
     var hints_lower = $('.hints-lower');
-    var hints_smallcaps = $('.hints-smallcaps');
     hints_lower.html(hints_lower.html() + hintsLower);
     hints_caps.html(hints_caps.html() + hintsCaps);
     hints_numbers.html(hints_numbers.html() + hintsNumbers);
-    hints_smallcaps.html(hints_smallcaps.html() + hintsSmallCaps);
 }

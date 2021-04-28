@@ -1,9 +1,9 @@
 var GRUMPIES = {
     'short': {
-        'text': "Grumpy wizards make toxic brew for the evil Queen and Jack. A quick movement of the enemy will jeopardize six gunboats. The job of waxing linoleum frequently peeves chintzy kids. My girl wove six dozen plaid jackets before she quit. Twelve ziggurats quickly jumped a finch box.",
+        'text': "Grumpy wizards make toxic brew for the evil Queen and Jack. A quick movement of the enemy will jeopardize six gunboats. The job of waxing linoleum frequently peeves chintzy kids.",
         'columns': [ // single column
             {
-                sizes: [96, 84, 72, 60, 48, 36, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12],
+                sizes: [96, 84, 72, 60, 48, 40, 36, 30, 29, 28, 27, 26, 25, 24, 23, 22, 21, 20, 19, 18, 17, 16, 15, 14, 13, 12],
                 innerblock: 'div'
             }
         ],
@@ -90,7 +90,6 @@ var GRUMPIES = {
 var hintsCaps = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 var hintsLower = "abcdefghijklmnopqrstuvwxyz.:;,";
 var hintsNumbers= "1234567890 @ &amp;!?#$€%";
-var hintsSmallCaps= "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 
 function eventTextLineChange(e) {
@@ -218,9 +217,7 @@ function prepareAndShowFontLayout() {
     var hints_caps = $('.hints-caps');
     var hints_numbers = $('.hints-numbers');
     var hints_lower = $('.hints-lower');
-    var hints_smallcaps = $('.hints-smallcaps');
     hints_lower.html(hints_lower.html() + hintsLower);
     hints_caps.html(hints_caps.html() + hintsCaps);
     hints_numbers.html(hints_numbers.html() + hintsNumbers);
-    hints_smallcaps.html(hints_smallcaps.html() + hintsSmallCaps);
 }

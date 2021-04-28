@@ -10,6 +10,13 @@
 	<span id="editions"><a href="index.php">Latin 1</a> | <a href="index-latin-02.php">Latin 2</a> |  <a href="index-cyrillic.php">Cyrillic</a> | <a href="index-devanagari.php">Devanagari</a> | <a href="index-hebrew.php">Hebrew</a> | <a href="index-kannada.php">Kannada</a> | <a href="index-malayalam.php">Malayalam</a> | <a href="index-tamil.php">Tamil</a> | <a href="index-telugu.php">Telugu</a> | <a href="tools.php">Tools</a> | <a href="specimen-helper.php">Specimen Helper</a></span>
 	<a href="javascript://" id="showhide">OpenType Features</a>
 </div>
+</section>
+
+<!-- OT Features Menu -->
+<div id="toggleotfeatures">
+	<span id="editions"><a href="index.php">Latin 1</a> | <a href="index-latin-02.php">Latin 2</a> |  <a href="index-cyrillic.php">Cyrillic</a> | <a href="index-devanagari.php">Devanagari</a> | <a href="tools.php">Tools</a> | <a href="specimen-helper.php">Specimen Helper</a></span>
+	<a href="javascript://" id="showhide">OpenType Features</a>
+</div>
 <div id="otfeatures" style="display: none;">
 	<table width="100%">
 		<tr>
@@ -77,6 +84,14 @@
 			   <input type="checkbox" id="ss18" onchange="refreshFeatures()">ss18</input> &nbsp; 
 			   <input type="checkbox" id="ss19" onchange="refreshFeatures()">ss19</input> &nbsp; 
 			   <input type="checkbox" id="ss20" onchange="refreshFeatures()">ss20</input><br/>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="4" valign="top">
+			   <label for="unicodebmp">Fallback Font</label>
+			   <input type="radio" checked id="unicodebmp" name="fallback" onchange="refreshFeatures()">Unicode BMP Fallback Font</input> &nbsp;
+			   <input type="radio" id="adobeblank" name="fallback" onchange="refreshFeatures()">Adobe Blank</input> &nbsp;
+			   <input id="fallbackfont" type="text" style="display:none" />
 			</td>
 		</tr>
 		<tr>

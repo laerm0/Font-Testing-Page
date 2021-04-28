@@ -128,7 +128,7 @@ $(document).ready(function(){
 				<p class="hints-lower" style="font-size: 48px;"></p>
 				<p class="hints-caps" style="font-size: 48px;"></p>
 				<p class="hints-numbers" style="font-size: 48px;"></p>
-				<p class="hints-smallcaps" style="font-variant: small-caps,font-size: 48px;"></p>
+				<p class="hints-smallcaps smallcaps" style="font-size: 48px;"></p>
 				<p>&nbsp;</p>
 
 <!-- 				<p class="sizelabel">28px</p>
@@ -144,7 +144,7 @@ $(document).ready(function(){
 <!-- 				<p style="font-size: <?php echo $i; ?>px;"> -->
 					<p class="hints-caps" style="font-size: <?php echo $i; ?>px;"></p> 
 					<p class="hints-numbers" style="font-size: <?php echo $i; ?>px;"></p>
-					<p class="hints-smallcaps" style="font-variant: small-caps, font-size: <?php echo $i; ?>px;"></p>
+					<p class="hints-smallcaps smallcaps" style="font-size: <?php echo $i; ?>px;"></p>
 				</p>
 				<p>&nbsp;</p>
 				<?php } ?>
